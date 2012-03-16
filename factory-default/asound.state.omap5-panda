@@ -1,0 +1,1201 @@
+state.omap5sevm {
+	control.1 {
+		iface MIXER
+		name 'DL1 Equalizer'
+		value 'Flat response'
+		comment {
+			access 'read write'
+			type ENUMERATED
+			count 1
+			item.0 'Flat response'
+			item.1 'High-pass 0dB'
+			item.2 'High-pass -12dB'
+			item.3 'High-pass -20dB'
+			item.4 '4Khz LPF   0dB'
+		}
+	}
+	control.2 {
+		iface MIXER
+		name 'DL2 Left Equalizer'
+		value 'Flat response'
+		comment {
+			access 'read write'
+			type ENUMERATED
+			count 1
+			item.0 'Flat response'
+			item.1 'High-pass 0dB'
+			item.2 'High-pass -12dB'
+			item.3 'High-pass -20dB'
+			item.4 '450Hz High-pass'
+		}
+	}
+	control.3 {
+		iface MIXER
+		name 'DL2 Right Equalizer'
+		value 'Flat response'
+		comment {
+			access 'read write'
+			type ENUMERATED
+			count 1
+			item.0 'Flat response'
+			item.1 'High-pass 0dB'
+			item.2 'High-pass -12dB'
+			item.3 'High-pass -20dB'
+			item.4 '450Hz High-pass'
+		}
+	}
+	control.4 {
+		iface MIXER
+		name 'Sidetone Equalizer'
+		value 'Flat response'
+		comment {
+			access 'read write'
+			type ENUMERATED
+			count 1
+			item.0 'Flat response'
+			item.1 'High-pass 0dB'
+			item.2 'High-pass -12dB'
+			item.3 'High-pass -18dB'
+		}
+	}
+	control.5 {
+		iface MIXER
+		name 'AMIC Equalizer'
+		value 'High-pass 0dB'
+		comment {
+			access 'read write'
+			type ENUMERATED
+			count 1
+			item.0 'High-pass 0dB'
+			item.1 'High-pass -12dB'
+			item.2 'High-pass -18dB'
+		}
+	}
+	control.6 {
+		iface MIXER
+		name 'DMIC Equalizer'
+		value 'High-pass 0dB'
+		comment {
+			access 'read write'
+			type ENUMERATED
+			count 1
+			item.0 'High-pass 0dB'
+			item.1 'High-pass -12dB'
+			item.2 'High-pass -18dB'
+		}
+	}
+	control.7 {
+		iface MIXER
+		name 'DL1 Media Playback Volume'
+		value 90
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 149'
+			dbmin -9999999
+			dbmax 2900
+			dbvalue.0 -3000
+		}
+	}
+	control.8 {
+		iface MIXER
+		name 'DL1 Tones Playback Volume'
+		value 0
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 149'
+			dbmin -9999999
+			dbmax 2900
+			dbvalue.0 -9999999
+		}
+	}
+	control.9 {
+		iface MIXER
+		name 'DL1 Voice Playback Volume'
+		value 0
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 149'
+			dbmin -9999999
+			dbmax 2900
+			dbvalue.0 -9999999
+		}
+	}
+	control.10 {
+		iface MIXER
+		name 'DL1 Capture Playback Volume'
+		value 0
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 149'
+			dbmin -9999999
+			dbmax 2900
+			dbvalue.0 -9999999
+		}
+	}
+	control.11 {
+		iface MIXER
+		name 'DL2 Media Playback Volume'
+		value 90
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 149'
+			dbmin -9999999
+			dbmax 2900
+			dbvalue.0 -3000
+		}
+	}
+	control.12 {
+		iface MIXER
+		name 'DL2 Tones Playback Volume'
+		value 0
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 149'
+			dbmin -9999999
+			dbmax 2900
+			dbvalue.0 -9999999
+		}
+	}
+	control.13 {
+		iface MIXER
+		name 'DL2 Voice Playback Volume'
+		value 0
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 149'
+			dbmin -9999999
+			dbmax 2900
+			dbvalue.0 -9999999
+		}
+	}
+	control.14 {
+		iface MIXER
+		name 'DL2 Capture Playback Volume'
+		value 0
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 149'
+			dbmin -9999999
+			dbmax 2900
+			dbvalue.0 -9999999
+		}
+	}
+	control.15 {
+		iface MIXER
+		name 'VXREC Media Volume'
+		value 0
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 149'
+			dbmin -9999999
+			dbmax 2900
+			dbvalue.0 -9999999
+		}
+	}
+	control.16 {
+		iface MIXER
+		name 'VXREC Tones Volume'
+		value 0
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 149'
+			dbmin -9999999
+			dbmax 2900
+			dbvalue.0 -9999999
+		}
+	}
+	control.17 {
+		iface MIXER
+		name 'VXREC Voice DL Volume'
+		value 0
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 149'
+			dbmin -9999999
+			dbmax 2900
+			dbvalue.0 -9999999
+		}
+	}
+	control.18 {
+		iface MIXER
+		name 'VXREC Voice UL Volume'
+		value 0
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 149'
+			dbmin -9999999
+			dbmax 2900
+			dbvalue.0 -9999999
+		}
+	}
+	control.19 {
+		iface MIXER
+		name 'AUDUL Media Volume'
+		value 0
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 149'
+			dbmin -9999999
+			dbmax 2900
+			dbvalue.0 -9999999
+		}
+	}
+	control.20 {
+		iface MIXER
+		name 'AUDUL Tones Volume'
+		value 0
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 149'
+			dbmin -9999999
+			dbmax 2900
+			dbvalue.0 -9999999
+		}
+	}
+	control.21 {
+		iface MIXER
+		name 'AUDUL Voice UL Volume'
+		value 120
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 149'
+			dbmin -9999999
+			dbmax 2900
+			dbvalue.0 0
+		}
+	}
+	control.22 {
+		iface MIXER
+		name 'AUDUL Voice DL Volume'
+		value 0
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 149'
+			dbmin -9999999
+			dbmax 2900
+			dbvalue.0 -9999999
+		}
+	}
+	control.23 {
+		iface MIXER
+		name 'SDT UL Volume'
+		value 0
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 149'
+			dbmin -9999999
+			dbmax 2900
+			dbvalue.0 -9999999
+		}
+	}
+	control.24 {
+		iface MIXER
+		name 'SDT DL Volume'
+		value 120
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 149'
+			dbmin -9999999
+			dbmax 2900
+			dbvalue.0 0
+		}
+	}
+	control.25 {
+		iface MIXER
+		name 'DMIC1 UL Volume'
+		value.0 120
+		value.1 120
+		comment {
+			access 'read write'
+			type INTEGER
+			count 2
+			range '0 - 149'
+			dbmin -9999999
+			dbmax 2900
+			dbvalue.0 0
+			dbvalue.1 0
+		}
+	}
+	control.26 {
+		iface MIXER
+		name 'DMIC2 UL Volume'
+		value.0 120
+		value.1 120
+		comment {
+			access 'read write'
+			type INTEGER
+			count 2
+			range '0 - 149'
+			dbmin -9999999
+			dbmax 2900
+			dbvalue.0 0
+			dbvalue.1 0
+		}
+	}
+	control.27 {
+		iface MIXER
+		name 'DMIC3 UL Volume'
+		value.0 120
+		value.1 120
+		comment {
+			access 'read write'
+			type INTEGER
+			count 2
+			range '0 - 149'
+			dbmin -9999999
+			dbmax 2900
+			dbvalue.0 0
+			dbvalue.1 0
+		}
+	}
+	control.28 {
+		iface MIXER
+		name 'AMIC UL Volume'
+		value.0 120
+		value.1 120
+		comment {
+			access 'read write'
+			type INTEGER
+			count 2
+			range '0 - 149'
+			dbmin -9999999
+			dbmax 2900
+			dbvalue.0 0
+			dbvalue.1 0
+		}
+	}
+	control.29 {
+		iface MIXER
+		name 'BT UL Volume'
+		value.0 120
+		value.1 120
+		comment {
+			access 'read write'
+			type INTEGER
+			count 2
+			range '0 - 149'
+			dbmin -9999999
+			dbmax 2900
+			dbvalue.0 0
+			dbvalue.1 0
+		}
+	}
+	control.30 {
+		iface MIXER
+		name 'DL1 Mono Mixer'
+		value false
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.31 {
+		iface MIXER
+		name 'DL2 Mono Mixer'
+		value false
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.32 {
+		iface MIXER
+		name 'AUDUL Mono Mixer'
+		value false
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.33 {
+		iface MIXER
+		name 'DL1 MM_EXT Switch'
+		value false
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.34 {
+		iface MIXER
+		name 'DL1 BT_VX Switch'
+		value false
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.35 {
+		iface MIXER
+		name 'DL1 PDM Switch'
+		value true
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.36 {
+		iface MIXER
+		name 'Sidetone Mixer Capture'
+		value false
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.37 {
+		iface MIXER
+		name 'Sidetone Mixer Playback'
+		value true
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.38 {
+		iface MIXER
+		name 'Capture Mixer Tones'
+		value false
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.39 {
+		iface MIXER
+		name 'Capture Mixer Voice Playback'
+		value false
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.40 {
+		iface MIXER
+		name 'Capture Mixer Voice Capture'
+		value false
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.41 {
+		iface MIXER
+		name 'Capture Mixer Media Playback'
+		value false
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.42 {
+		iface MIXER
+		name 'Voice Capture Mixer Tones Playback'
+		value false
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.43 {
+		iface MIXER
+		name 'Voice Capture Mixer Media Playback'
+		value false
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.44 {
+		iface MIXER
+		name 'Voice Capture Mixer Capture'
+		value false
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.45 {
+		iface MIXER
+		name 'DL2 Mixer Tones'
+		value false
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.46 {
+		iface MIXER
+		name 'DL2 Mixer Voice'
+		value false
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.47 {
+		iface MIXER
+		name 'DL2 Mixer Capture'
+		value false
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.48 {
+		iface MIXER
+		name 'DL2 Mixer Multimedia'
+		value true
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.49 {
+		iface MIXER
+		name 'DL1 Mixer Tones'
+		value false
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.50 {
+		iface MIXER
+		name 'DL1 Mixer Voice'
+		value false
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.51 {
+		iface MIXER
+		name 'DL1 Mixer Capture'
+		value false
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.52 {
+		iface MIXER
+		name 'DL1 Mixer Multimedia'
+		value true
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.53 {
+		iface MIXER
+		name MUX_VX1
+		value None
+		comment {
+			access 'read write'
+			type ENUMERATED
+			count 1
+			item.0 None
+			item.1 DMic0L
+			item.2 DMic0R
+			item.3 DMic1L
+			item.4 DMic1R
+			item.5 DMic2L
+			item.6 DMic2R
+			item.7 'BT Left'
+			item.8 'BT Right'
+			item.9 'MMExt Left'
+			item.10 'MMExt Right'
+			item.11 AMic0
+			item.12 AMic1
+			item.13 'VX Left'
+			item.14 'VX Right'
+		}
+	}
+	control.54 {
+		iface MIXER
+		name MUX_VX0
+		value None
+		comment {
+			access 'read write'
+			type ENUMERATED
+			count 1
+			item.0 None
+			item.1 DMic0L
+			item.2 DMic0R
+			item.3 DMic1L
+			item.4 DMic1R
+			item.5 DMic2L
+			item.6 DMic2R
+			item.7 'BT Left'
+			item.8 'BT Right'
+			item.9 'MMExt Left'
+			item.10 'MMExt Right'
+			item.11 AMic0
+			item.12 AMic1
+			item.13 'VX Left'
+			item.14 'VX Right'
+		}
+	}
+	control.55 {
+		iface MIXER
+		name MUX_UL11
+		value None
+		comment {
+			access 'read write'
+			type ENUMERATED
+			count 1
+			item.0 None
+			item.1 DMic0L
+			item.2 DMic0R
+			item.3 DMic1L
+			item.4 DMic1R
+			item.5 DMic2L
+			item.6 DMic2R
+			item.7 'BT Left'
+			item.8 'BT Right'
+			item.9 'MMExt Left'
+			item.10 'MMExt Right'
+			item.11 AMic0
+			item.12 AMic1
+			item.13 'VX Left'
+			item.14 'VX Right'
+		}
+	}
+	control.56 {
+		iface MIXER
+		name MUX_UL10
+		value None
+		comment {
+			access 'read write'
+			type ENUMERATED
+			count 1
+			item.0 None
+			item.1 DMic0L
+			item.2 DMic0R
+			item.3 DMic1L
+			item.4 DMic1R
+			item.5 DMic2L
+			item.6 DMic2R
+			item.7 'BT Left'
+			item.8 'BT Right'
+			item.9 'MMExt Left'
+			item.10 'MMExt Right'
+			item.11 AMic0
+			item.12 AMic1
+			item.13 'VX Left'
+			item.14 'VX Right'
+		}
+	}
+	control.57 {
+		iface MIXER
+		name MUX_UL07
+		value None
+		comment {
+			access 'read write'
+			type ENUMERATED
+			count 1
+			item.0 None
+			item.1 DMic0L
+			item.2 DMic0R
+			item.3 DMic1L
+			item.4 DMic1R
+			item.5 DMic2L
+			item.6 DMic2R
+			item.7 'BT Left'
+			item.8 'BT Right'
+			item.9 'MMExt Left'
+			item.10 'MMExt Right'
+			item.11 AMic0
+			item.12 AMic1
+			item.13 'VX Left'
+			item.14 'VX Right'
+		}
+	}
+	control.58 {
+		iface MIXER
+		name MUX_UL06
+		value None
+		comment {
+			access 'read write'
+			type ENUMERATED
+			count 1
+			item.0 None
+			item.1 DMic0L
+			item.2 DMic0R
+			item.3 DMic1L
+			item.4 DMic1R
+			item.5 DMic2L
+			item.6 DMic2R
+			item.7 'BT Left'
+			item.8 'BT Right'
+			item.9 'MMExt Left'
+			item.10 'MMExt Right'
+			item.11 AMic0
+			item.12 AMic1
+			item.13 'VX Left'
+			item.14 'VX Right'
+		}
+	}
+	control.59 {
+		iface MIXER
+		name MUX_UL05
+		value None
+		comment {
+			access 'read write'
+			type ENUMERATED
+			count 1
+			item.0 None
+			item.1 DMic0L
+			item.2 DMic0R
+			item.3 DMic1L
+			item.4 DMic1R
+			item.5 DMic2L
+			item.6 DMic2R
+			item.7 'BT Left'
+			item.8 'BT Right'
+			item.9 'MMExt Left'
+			item.10 'MMExt Right'
+			item.11 AMic0
+			item.12 AMic1
+			item.13 'VX Left'
+			item.14 'VX Right'
+		}
+	}
+	control.60 {
+		iface MIXER
+		name MUX_UL04
+		value None
+		comment {
+			access 'read write'
+			type ENUMERATED
+			count 1
+			item.0 None
+			item.1 DMic0L
+			item.2 DMic0R
+			item.3 DMic1L
+			item.4 DMic1R
+			item.5 DMic2L
+			item.6 DMic2R
+			item.7 'BT Left'
+			item.8 'BT Right'
+			item.9 'MMExt Left'
+			item.10 'MMExt Right'
+			item.11 AMic0
+			item.12 AMic1
+			item.13 'VX Left'
+			item.14 'VX Right'
+		}
+	}
+	control.61 {
+		iface MIXER
+		name MUX_UL03
+		value None
+		comment {
+			access 'read write'
+			type ENUMERATED
+			count 1
+			item.0 None
+			item.1 DMic0L
+			item.2 DMic0R
+			item.3 DMic1L
+			item.4 DMic1R
+			item.5 DMic2L
+			item.6 DMic2R
+			item.7 'BT Left'
+			item.8 'BT Right'
+			item.9 'MMExt Left'
+			item.10 'MMExt Right'
+			item.11 AMic0
+			item.12 AMic1
+			item.13 'VX Left'
+			item.14 'VX Right'
+		}
+	}
+	control.62 {
+		iface MIXER
+		name MUX_UL02
+		value None
+		comment {
+			access 'read write'
+			type ENUMERATED
+			count 1
+			item.0 None
+			item.1 DMic0L
+			item.2 DMic0R
+			item.3 DMic1L
+			item.4 DMic1R
+			item.5 DMic2L
+			item.6 DMic2R
+			item.7 'BT Left'
+			item.8 'BT Right'
+			item.9 'MMExt Left'
+			item.10 'MMExt Right'
+			item.11 AMic0
+			item.12 AMic1
+			item.13 'VX Left'
+			item.14 'VX Right'
+		}
+	}
+	control.63 {
+		iface MIXER
+		name MUX_UL01
+		value AMic1
+		comment {
+			access 'read write'
+			type ENUMERATED
+			count 1
+			item.0 None
+			item.1 DMic0L
+			item.2 DMic0R
+			item.3 DMic1L
+			item.4 DMic1R
+			item.5 DMic2L
+			item.6 DMic2R
+			item.7 'BT Left'
+			item.8 'BT Right'
+			item.9 'MMExt Left'
+			item.10 'MMExt Right'
+			item.11 AMic0
+			item.12 AMic1
+			item.13 'VX Left'
+			item.14 'VX Right'
+		}
+	}
+	control.64 {
+		iface MIXER
+		name MUX_UL00
+		value AMic0
+		comment {
+			access 'read write'
+			type ENUMERATED
+			count 1
+			item.0 None
+			item.1 DMic0L
+			item.2 DMic0R
+			item.3 DMic1L
+			item.4 DMic1R
+			item.5 DMic2L
+			item.6 DMic2R
+			item.7 'BT Left'
+			item.8 'BT Right'
+			item.9 'MMExt Left'
+			item.10 'MMExt Right'
+			item.11 AMic0
+			item.12 AMic1
+			item.13 'VX Left'
+			item.14 'VX Right'
+		}
+	}
+	control.65 {
+		iface MIXER
+		name 'Capture Preamplifier Volume'
+		value.0 1
+		value.1 1
+		comment {
+			access 'read write'
+			type INTEGER
+			count 2
+			range '0 - 1'
+			dbmin -600
+			dbmax 0
+			dbvalue.0 0
+			dbvalue.1 0
+		}
+	}
+	control.66 {
+		iface MIXER
+		name 'Capture Volume'
+		value.0 4
+		value.1 4
+		comment {
+			access 'read write'
+			type INTEGER
+			count 2
+			range '0 - 4'
+			dbmin 600
+			dbmax 3000
+			dbvalue.0 3000
+			dbvalue.1 3000
+		}
+	}
+	control.67 {
+		iface MIXER
+		name 'Aux FM Volume'
+		value.0 0
+		value.1 0
+		comment {
+			access 'read write'
+			type INTEGER
+			count 2
+			range '0 - 7'
+			dbmin -1800
+			dbmax 2400
+			dbvalue.0 -1800
+			dbvalue.1 -1800
+		}
+	}
+	control.68 {
+		iface MIXER
+		name 'Headset Playback Volume'
+		value.0 13
+		value.1 13
+		comment {
+			access 'read write'
+			type INTEGER
+			count 2
+			range '0 - 15'
+			dbmin -3000
+			dbmax 0
+			dbvalue.0 -400
+			dbvalue.1 -400
+		}
+	}
+	control.69 {
+		iface MIXER
+		name 'Handsfree Playback Volume'
+		value.0 27
+		value.1 27
+		comment {
+			access 'read write'
+			type INTEGER
+			count 2
+			range '0 - 29'
+			dbmin -5200
+			dbmax 600
+			dbvalue.0 200
+			dbvalue.1 200
+		}
+	}
+	control.70 {
+		iface MIXER
+		name 'Earphone Playback Volume'
+		value 0
+		comment {
+			access 'read write'
+			type INTEGER
+			count 1
+			range '0 - 15'
+			dbmin -2400
+			dbmax 600
+			dbvalue.0 -2400
+		}
+	}
+	control.71 {
+		iface MIXER
+		name 'Headset Power Mode'
+		value Low-Power
+		comment {
+			access 'read write'
+			type ENUMERATED
+			count 1
+			item.0 Low-Power
+			item.1 High-Perfomance
+		}
+	}
+	control.72 {
+		iface MIXER
+		name 'PLL Selection'
+		value Low-Power
+		comment {
+			access 'read write'
+			type ENUMERATED
+			count 1
+			item.0 Low-Power
+			item.1 High-Perfomance
+		}
+	}
+	control.73 {
+		iface MIXER
+		name 'AUXR Playback Switch'
+		value true
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.74 {
+		iface MIXER
+		name 'AUXL Playback Switch'
+		value true
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.75 {
+		iface MIXER
+		name 'Earphone Playback Switch'
+		value false
+		comment {
+			access 'read write'
+			type BOOLEAN
+			count 1
+		}
+	}
+	control.76 {
+		iface MIXER
+		name 'Vibra Right Playback'
+		value 'Input FF'
+		comment {
+			access 'read write'
+			type ENUMERATED
+			count 1
+			item.0 'Input FF'
+			item.1 'Audio PDM'
+		}
+	}
+	control.77 {
+		iface MIXER
+		name 'Vibra Left Playback'
+		value 'Input FF'
+		comment {
+			access 'read write'
+			type ENUMERATED
+			count 1
+			item.0 'Input FF'
+			item.1 'Audio PDM'
+		}
+	}
+	control.78 {
+		iface MIXER
+		name 'Headset Right Playback'
+		value 'HS DAC'
+		comment {
+			access 'read write'
+			type ENUMERATED
+			count 1
+			item.0 Off
+			item.1 'HS DAC'
+			item.2 'Line-In amp'
+		}
+	}
+	control.79 {
+		iface MIXER
+		name 'Headset Left Playback'
+		value 'HS DAC'
+		comment {
+			access 'read write'
+			type ENUMERATED
+			count 1
+			item.0 Off
+			item.1 'HS DAC'
+			item.2 'Line-In amp'
+		}
+	}
+	control.80 {
+		iface MIXER
+		name 'Handsfree Right Playback'
+		value 'HF DAC'
+		comment {
+			access 'read write'
+			type ENUMERATED
+			count 1
+			item.0 Off
+			item.1 'HF DAC'
+			item.2 'Line-In amp'
+		}
+	}
+	control.81 {
+		iface MIXER
+		name 'Handsfree Left Playback'
+		value 'HF DAC'
+		comment {
+			access 'read write'
+			type ENUMERATED
+			count 1
+			item.0 Off
+			item.1 'HF DAC'
+			item.2 'Line-In amp'
+		}
+	}
+	control.82 {
+		iface MIXER
+		name 'Analog Right Capture Route'
+		value 'Aux/FM Right'
+		comment {
+			access 'read write'
+			type ENUMERATED
+			count 1
+			item.0 'Headset Mic'
+			item.1 'Sub Mic'
+			item.2 'Aux/FM Right'
+			item.3 Off
+		}
+	}
+	control.83 {
+		iface MIXER
+		name 'Analog Left Capture Route'
+		value 'Aux/FM Left'
+		comment {
+			access 'read write'
+			type ENUMERATED
+			count 1
+			item.0 'Headset Mic'
+			item.1 'Main Mic'
+			item.2 'Aux/FM Left'
+			item.3 Off
+		}
+	}
+}

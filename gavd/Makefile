@@ -16,6 +16,7 @@ CFILES	=					\
 	codec_cirrus_cougarpoint.c		\
 	codec_max98095.c			\
 	codec_wm8903.c				\
+	codec_twl6040.c				\
 	cras_connection.c			\
 	device_info.c				\
 	dbus_connection.c                       \
