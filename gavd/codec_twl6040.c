@@ -5,7 +5,7 @@
 #include "codec.h"
 #include "linkerset.h"
 
-
+#if 0
 static char const *initialize[] = {
     "-q cset name='DL1 Mixer Multimedia' 1",
     "-q cset name='Sidetone Mixer Playback' 1",
@@ -30,12 +30,12 @@ static char const *initialize[] = {
     "-q cset name='Analog Right Capture Route' 2",
     NULL
 };
+#endif
 
 #define DECLARE_BOARD(_board)                                   \
     static codec_desc_t _board##_codec_desc = {                 \
         .codec             = "twl6040",                         \
         .board             = "omap5-panda",                     \
-        .initialize        = initialize,                        \
         .headphone_insert  = NULL,                  		\
         .headphone_remove  = NULL,                  		\
         .microphone_insert = NULL,              		\
